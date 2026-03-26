@@ -1,30 +1,41 @@
-AI Proctoring System for Exams
+# AI Proctoring System for Exams
 
-An AI-based exam proctoring system using OpenCV that monitors candidates in real time through a webcam and detects suspicious activities during online exams.
-📌 Features
-Real-time face detection
-Eye tracking to detect looking away
-Multiple face detection
-Violation logging with screenshots
-Automatic exam summary report
+This project is an **AI Proctoring System** built using **Python and OpenCV** to monitor students during online exams.
 
-🛠️ Technologies Used
+It uses the webcam to detect suspicious activities such as:
+- No face detected
+- Multiple faces detected
+- Looking away
+- Mobile phone detection
 
-Python
-OpenCV
-NumPy
+The system also saves screenshots of violations and generates a final report.
 
-▶️ How to Run
+## Technologies Used
+- Python
+- OpenCV
+- NumPy
+- YOLOv3-tiny
 
-Install dependencies:
-pip install opencv-python numpy
-Run the project:
-python main.py
+## Features
+- Face detection
+- Eye detection
+- Multiple person detection
+- Mobile phone detection
+- Violation logging
+- Screenshot capture
+- Exam report generation
 
-Press q to end the exam.
+## How It Works
+1. Captures video from webcam
+2. Detects face and eyes
+3. Monitors suspicious activities
+4. Logs violations
+5. Generates final report
 
-📂 Output
+## Output
+- Violation screenshots
+- Log file
+- Exam report
 
-violations/ → Screenshots of detected violations
-proctoring_logs/ → Violation logs and final exam report
-
+## Purpose
+This project is useful for online exam monitoring and cheating detection.
